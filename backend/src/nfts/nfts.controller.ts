@@ -19,26 +19,26 @@ export class NftsController {
 
   @Post()
   create(@Body() createNftDto: CreateNftDto) {
-    return this.nftsService.create(createNftDto);
+    return this.nftsService.createOneNft(createNftDto);
   }
 
   @Get()
   findAll() {
-    return this.nftsService.findAll();
+    return this.nftsService.findAllNfts();
   }
 
-  @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.nftsService.findOne(+id);
+  @Get(':nftId')
+  findOne(@Param('nftId') nftId: string) {
+    return this.nftsService.findOneNft(nftId);
   }
 
-  @Patch(':id')
-  update(@Param('id') id: string, @Body() updateNftDto: UpdateNftDto) {
-    return this.nftsService.update(+id, updateNftDto);
+  @Patch(':nftId')
+  update(@Param('nftId') nftId: string, @Body() updateNftDto: UpdateNftDto) {
+    return this.nftsService.updateNft(nftId, updateNftDto);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.nftsService.remove(+id);
+  @Delete(':nftId')
+  remove(@Param('nftId') nftId: string) {
+    return this.nftsService.deleteNft(nftId);
   }
 }
