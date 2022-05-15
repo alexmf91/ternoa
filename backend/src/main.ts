@@ -16,6 +16,7 @@ async function bootstrap() {
     const VERSION = configService.get<string>('VERSION');
 
     app.setGlobalPrefix('api');
+    app.enableCors();
     const config = new DocumentBuilder()
       .setTitle(APP)
       .setVersion(`${VERSION}`)
