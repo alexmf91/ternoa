@@ -2,7 +2,7 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateNftDto {
   @ApiProperty()
-  readonly title: string;
+  readonly name: string;
 
   @ApiProperty()
   readonly description: string;

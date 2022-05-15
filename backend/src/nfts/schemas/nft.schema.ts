@@ -6,7 +6,7 @@ export type NftDocument = Nft & Document;
 @Schema()
 export class Nft {
   @Prop({ type: String, required: true })
-  title: string;
+  name: string;
 
   @Prop({ type: String, required: true })
   description: string;

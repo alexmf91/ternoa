@@ -5,7 +5,7 @@ export class Nft {
   id: string;
 
   @ApiProperty()
-  title: string;
+  name: string;
 
   @ApiProperty()
   description: string;
