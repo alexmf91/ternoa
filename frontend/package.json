@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@metamask/providers": "^8.1.1",
     "@testing-library/react": "^13.0.1",
     "axios": "^0.27.2",
     "react": "^18.0.0",
