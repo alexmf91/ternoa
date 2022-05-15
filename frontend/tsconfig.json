@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
